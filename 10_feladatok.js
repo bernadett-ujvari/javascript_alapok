@@ -49,13 +49,14 @@ a) for ciklust: */
 
 /* 2. feladat: 
 A napok3 tömbbe tedd bele a napok értékeinek rövidített változatát. A rövidített változat mindig három betű (Mon, Tue, Wed, Thu, Fri). */
+// Ez nálam csak felsorolta sorban a betűket, a napok első három betűjét, de nem választotta szét naponként.//
 let napok = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 let napok3 = []
 
 for (nap of napok) {
     napok3.push(nap[0], nap[1], nap[2]);
 }
-console.log(napok3);  */
+console.log(napok3); 
 
 /* Amint készen vagy, írd át a kódot slice segítségével: */
 
