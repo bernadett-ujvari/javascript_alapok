@@ -2,14 +2,14 @@
 1. feladat: 
 Írd ki az "abcdefghij" string betűit külön sorokba console.log segítségével. 
 Használj:
-a) for ciklust:
+a) for ciklust: */
 
         let abc = 'abcdefghij'
         for (let i = 0; i < abc.length; ++i) {
             console.log(abc[i]);
         }
 
-b) while ciklust:
+/* b) while ciklust: */
 
         let abc = 'abcdefghij';
         let i = 0;
@@ -18,21 +18,20 @@ b) while ciklust:
             i += 1;
         }
 
-c) for..of ciklust:
+/* c) for..of ciklust: */
         let abc = 'abcdefghij';
         for (let betű of abc) {
             console.log(betű);
         }
-*/
 
 /* d) ismételd meg a fenti feladatot a '理解する' stringre. Mit tapasztalsz? ------ Ugyanúgy működik.*/
-/* for ciklussal: 
+/* for ciklussal: */
 
                 let japan = '理解する'
                 for (let i = 0; i < japan.length; ++i) {
                     console.log(japan[i]);
-                }*/
-/* while ciklussal:  
+                }
+/* while ciklussal: */ 
 
                 let japan = '理解する';
                 let i = 0;
@@ -41,17 +40,15 @@ c) for..of ciklust:
                     i += 1;
                 }
 
-        */
 
-/* for..of ciklussal:  
+/* for..of ciklussal: */
                 let japan = '理解する';
                 for (let betű of japan) {
                     console.log(betű);
                 }
-        */
 
 /* 2. feladat: 
-A napok3 tömbbe tedd bele a napok értékeinek rövidített változatát. A rövidített változat mindig három betű (Mon, Tue, Wed, Thu, Fri). 
+A napok3 tömbbe tedd bele a napok értékeinek rövidített változatát. A rövidített változat mindig három betű (Mon, Tue, Wed, Thu, Fri). */
 let napok = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 let napok3 = []
 
@@ -60,7 +57,7 @@ for (nap of napok) {
 }
 console.log(napok3);  */
 
-/* Amint készen vagy, írd át a kódot slice segítségével:
+/* Amint készen vagy, írd át a kódot slice segítségével: */
 
 let napok = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 let napok3 = []
@@ -71,11 +68,11 @@ for (let nap of napok) {
     napok3.push(shortName);   
 } 
 console.log(napok3);
- */
+
 
 /*
 3. feladat: 
-Írd ki az első tíz pozitív egész páros számot a konzolra.
+Írd ki az első tíz pozitív egész páros számot a konzolra. */
 console.log("az első tíz pozitív páros egész szám: ")
 let tömb = [];
 let i = 0;
@@ -84,13 +81,13 @@ while (tömb.length < 10) {
     tömb.push(i);
 }
 console.log(tömb);
- */
+
 
 
 /*
 4. feladat: 
 Kérj a felhasználótól egy pozitív egész számot. 
-Írd ki a konzolra az összes olyan pozitív egész számot, amelyek kisebbek vagy egyenlőek, mint a bekért szám. A kiírás növekvő sorrendben történjen. 
+Írd ki a konzolra az összes olyan pozitív egész számot, amelyek kisebbek vagy egyenlőek, mint a bekért szám. A kiírás növekvő sorrendben történjen. */
 let bemenet = prompt ("Adj meg egy pozitív egész számot").trim(); //kiszedi a nemkívánt szóközöket, tabulátorokat,stb.
 let szám = Number(bemenet);
 
@@ -110,7 +107,6 @@ function számsor() {
         i += 1;
     }
 }
-*/
 
 /*
 5. feladat: 
@@ -118,7 +114,7 @@ Oldd meg a FizzBuzz feladatot. Írd ki az első pozitív száz egész számot a 
 - Ha a kiírandó szám 3-al osztható, de öttel nem, akkor a szám helyett a 'Fizz' stringet írd ki
 - Ha a kiírandó szám 5-el osztható, de 3-al nem, akkor a szám helyett a 'Buzz' stringet írd ki
 - Ha a szám 3-al és 5-el is osztható, akkor a szám helyett a 'FizzBuzz' stringet írd ki
-Extra: száz helyett a felhasználótól is bekérheted a FizzBuzz maximumát.
+Extra: száz helyett a felhasználótól is bekérheted a FizzBuzz maximumát. */
 
 
 
@@ -134,7 +130,6 @@ for (let i = 1; i <= 100; i += 1) {
         console.log(i);
     }
 }
-*/
 
 
 
